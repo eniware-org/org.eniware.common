@@ -1,24 +1,6 @@
 /* ==================================================================
- * RFC1924OutputStream.java - May 15, 2013 6:42:26 AM
- * 
- * Copyright 2007-2013 SolarNetwork.net Dev Team
- * 
- * Adapted from libxjava original source.
- * 
- * Copyright (c) 2010 Marcel Patzlaff (marcel.patzlaff@gmail.com)
- *
- * This library is free software: you can redistribute it and/or modify it
- * under the terms of the GNU Lesser General Public License as published
- * by the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this library.  If not, see <http://www.gnu.org/licenses/>.
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
  * ==================================================================
  */
 
