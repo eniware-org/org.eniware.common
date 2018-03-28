@@ -13,7 +13,6 @@ import java.util.Map;
 /**
  * Basic implementation of {@link NetworkIdentity}.
  * 
- * @author matt
  * @version 1.1
  */
 public class BasicNetworkIdentity implements NetworkIdentity, Serializable {

@@ -11,7 +11,6 @@ import java.util.Map;
 /**
  * A web request envelope object.
  * 
- * @author matt
  * @version 1.1
  */
 public class Request extends org.eniware.domain.Request {

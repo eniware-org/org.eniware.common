@@ -55,7 +55,7 @@ import org.springframework.beans.factory.FactoryBean;
  * 
  * @param <T>
  *        the tracked service type
- * @author matt
+
  * @version 1.0
  */
 public class DynamicServiceProxy<T> implements InvocationHandler, FactoryBean<T>, FilterableService {

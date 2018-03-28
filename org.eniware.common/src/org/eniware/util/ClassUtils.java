@@ -31,7 +31,6 @@ import org.springframework.util.StringUtils;
 /**
  * Utility methods for dealing with classes at runtime.
  *
- * @author matt
  * @version 1.1
  */
 public final class ClassUtils {

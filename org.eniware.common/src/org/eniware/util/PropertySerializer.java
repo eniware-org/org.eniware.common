@@ -13,8 +13,7 @@ package org.eniware.util;
  * <p>This API is designed with implementations being thread-safe by
  * default, so a single implementation can be instantiated once and
  * used throughout an application.</p>
- * 
- * @author matt
+ *
  * @version $Revision$ $Date$
  */
 public interface PropertySerializer {

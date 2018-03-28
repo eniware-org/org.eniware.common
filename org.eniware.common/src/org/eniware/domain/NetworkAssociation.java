@@ -9,7 +9,6 @@ package org.eniware.domain;
 /**
  * API for node/network association details.
  * 
- * @author matt
  * @version 1.1
  */
 public interface NetworkAssociation extends NetworkIdentity {

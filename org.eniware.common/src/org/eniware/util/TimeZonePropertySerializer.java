@@ -10,8 +10,7 @@ import java.util.TimeZone;
 
 /**
  * {@link PropertySerializer} for {@link TimeZone} objects into TimeZone ID strings.
- * 
- * @author matt
+ *
  * @version $Revision$
  * @since 1.2
  */

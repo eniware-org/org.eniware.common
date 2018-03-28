@@ -35,7 +35,6 @@ import org.springframework.util.StringUtils;
  * and nested names.
  * </p>
  * 
- * @author matt.magoffin
  * @version $Revision$ $Date$
  */
 public final class StringMerger {

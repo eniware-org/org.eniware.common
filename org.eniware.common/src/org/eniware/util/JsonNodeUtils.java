@@ -17,8 +17,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  * Utilities for parsing values from {@link JsonNode} objects.
- * 
- * @author matt
+ *
  * @version 1.1
  * @since 1.35
  * @deprecated use {@link JsonUtils} instead

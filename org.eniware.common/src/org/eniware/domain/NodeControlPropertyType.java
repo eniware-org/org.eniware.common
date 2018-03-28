@@ -9,7 +9,6 @@ package org.eniware.domain;
 /**
  * Enumeration of supported node component property types.
  * 
- * @author matt
  * @version $Revision$
  */
 public enum NodeControlPropertyType {

@@ -15,8 +15,7 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 
 /**
  * JsonDeserializer for {@link LocalDateTime} objects from formatted strings.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class JodaLocalDateTimeDeserializer extends JodaBaseJsonDeserializer<LocalDateTime> {

@@ -9,7 +9,6 @@ package org.eniware.domain;
 /**
  * Implementation of {@link SortDescriptor}.
  * 
- * @author matt
  * @version 1.0
  */
 public class SimpleSortDescriptor implements SortDescriptor {

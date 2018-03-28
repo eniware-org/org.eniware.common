@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * A cached object holder.
  * 
- * @author matt
  * @version 1.0
  * @param <T>
  *        The type of object that is cached.

@@ -25,7 +25,6 @@ import org.slf4j.LoggerFactory;
  * &lt;/reference-list>
  * </pre>
  * 
- * @author matt
  * @version 1.0
  * @since 1.36
  */

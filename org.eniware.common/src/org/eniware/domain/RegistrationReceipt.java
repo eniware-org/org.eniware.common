@@ -10,8 +10,7 @@ import java.io.Serializable;
 
 /**
  * A receipt for registration.
- * 
- * @author matt
+ *
  * @version 1.1
  */
 public interface RegistrationReceipt extends Serializable {

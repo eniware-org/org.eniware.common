@@ -8,8 +8,7 @@ package org.eniware.util;
 
 /**
  * Exception thrown when a dynamic service is not available.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class DynamicServiceUnavailableException extends RuntimeException {

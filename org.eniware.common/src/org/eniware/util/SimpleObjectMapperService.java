@@ -10,8 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Basic implementation of {@link ObjectMapperService}.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class SimpleObjectMapperService implements ObjectMapperService {

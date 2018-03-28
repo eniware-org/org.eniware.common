@@ -11,7 +11,6 @@ import java.util.Date;
 /**
  * Command object for initial SolarNode and SolarNet association data.
  * 
- * @author matt
  * @version 1.1
  */
 public class NetworkAssociationDetails extends BasicNetworkIdentity implements NetworkAssociation,

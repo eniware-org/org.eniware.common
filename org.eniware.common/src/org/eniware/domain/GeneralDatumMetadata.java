@@ -20,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * Metadata about general node datum streams of data.
  * 
- * @author matt
  * @version 1.1
  */
 @JsonPropertyOrder({ "m", "pm", "t" })

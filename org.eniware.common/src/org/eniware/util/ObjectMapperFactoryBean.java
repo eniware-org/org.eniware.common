@@ -61,8 +61,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  * <dd>A list of {@link SerializationFeature} or {@link DeserializationFeature}
  * flags to disable.</dd>
  * </dl>
- * 
- * @author matt
+ *
  * @version 1.3
  */
 public class ObjectMapperFactoryBean extends ObjectMapperModuleSupport

@@ -18,7 +18,6 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 /**
  * Helper class for {@link ObjectMapper} configuration.
  * 
- * @author matt
  * @version 1.0
  */
 public class ObjectMapperModuleSupport extends SimpleObjectMapperService {

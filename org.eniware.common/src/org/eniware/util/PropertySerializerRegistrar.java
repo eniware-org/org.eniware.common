@@ -24,7 +24,6 @@ import java.util.Map;
  *   for serializing those properties with.</dd>
  * </dl>
  *
- * @author matt
  * @version $Revision$ $Date$
  */
 public class PropertySerializerRegistrar {

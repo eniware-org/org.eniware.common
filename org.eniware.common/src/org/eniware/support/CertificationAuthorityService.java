@@ -13,7 +13,6 @@ import java.security.cert.X509Certificate;
 /**
  * Certification authority service.
  * 
- * @author matt
  * @version 1.0
  */
 public interface CertificationAuthorityService {

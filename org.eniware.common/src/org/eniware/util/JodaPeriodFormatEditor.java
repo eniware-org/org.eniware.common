@@ -21,7 +21,6 @@ import org.joda.time.format.PeriodFormatter;
  * in mind, so that one instance of a {@link JodaPeriodFormatEditor} can be shared
  * between multiple threads to parse or format Joda date objects.</p>
  * 
- * @author matt
  * @version $Revision$
  */
 public class JodaPeriodFormatEditor extends PropertyEditorSupport

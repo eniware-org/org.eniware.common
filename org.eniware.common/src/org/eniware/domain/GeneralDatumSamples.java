@@ -19,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * A collection of different types of sample data, grouped by logical sample
  * type.
  * 
- * @author matt
  * @version 1.1
  */
 public class GeneralDatumSamples extends GeneralDatumSupport implements Serializable {

@@ -20,8 +20,7 @@ import com.fasterxml.jackson.databind.ser.std.StdScalarSerializer;
 /**
  * Abstract {@link JsonSerializer} class for converting Joda objects into simple
  * strings.
- * 
- * @author matt
+ *
  * @version 1.1
  */
 public abstract class JodaBaseJsonSerializer<T> extends StdScalarSerializer<T> {

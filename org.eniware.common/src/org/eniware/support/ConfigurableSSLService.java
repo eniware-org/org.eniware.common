@@ -37,7 +37,6 @@ import org.slf4j.LoggerFactory;
  * and truststore to use for the {@code SSLSocketFactory} returned by
  * {@link #getSSLSocketFactory()}.
  * 
- * @author matt
  * @version 1.0
  */
 public class ConfigurableSSLService implements SSLService {

@@ -13,7 +13,6 @@ import java.io.OutputStream;
 /**
  * Encode binary data into ASCII85 form based on RFC 1924.
  * 
- * @author matt
  * @version 1.0
  */
 public class RFC1924OutputStream extends FilterOutputStream {

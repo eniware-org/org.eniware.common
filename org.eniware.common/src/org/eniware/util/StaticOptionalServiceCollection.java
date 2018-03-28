@@ -17,7 +17,6 @@ import java.util.Collection;
  * required, but the service is known and available statically.
  * </p>
  * 
- * @author matt
  * @version 1.0
  */
 public class StaticOptionalServiceCollection<T> implements OptionalServiceCollection<T> {

@@ -24,7 +24,6 @@ import org.springframework.util.PathMatcher;
  * Adapts the OSGi {@link EventAdmin} API to a non-OSGi, Spring based
  * application context environment.
  * 
- * @author matt
  * @version 1.0
  * @since 1.36
  */

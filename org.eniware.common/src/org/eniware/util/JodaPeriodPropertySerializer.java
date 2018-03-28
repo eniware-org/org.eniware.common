@@ -18,7 +18,6 @@ import org.joda.time.format.PeriodFormatter;
  * <p>{@link Duration} instances will be converted to {@link Period} instances
  * via {@link Duration#toPeriod()}.</p>
  * 
- * @author matt
  * @version $Revision$
  */
 public class JodaPeriodPropertySerializer implements PropertySerializer {

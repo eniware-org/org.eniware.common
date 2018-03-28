@@ -33,8 +33,7 @@ import org.eniware.support.PasswordEncoder;
  * standard. See <a href="https://tools.ietf.org/html/rfc2898">RFC 2989</a> for
  * more information.
  * </p>
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class BCPBKDF2PasswordEncoder implements PasswordEncoder {

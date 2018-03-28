@@ -14,8 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * auto-wiring on {@link #setObject(Object)}. This is to facilitate exposing
  * services with known bean IDs, for situations where a bean might be injected
  * into the application context with an ID generated at runtime.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class AutowiredPropertyFactoryBean<T> implements FactoryBean<T> {

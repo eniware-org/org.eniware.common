@@ -13,8 +13,7 @@ import com.fasterxml.jackson.databind.Module;
  * {@KeyDeserializer} does not implement an interface, nor provide a default
  * "type" the deserializer supports. This API provides a way to configure them
  * on a {@link Module}.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public interface TypedKeyDeserializer {

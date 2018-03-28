@@ -28,8 +28,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Utilities for JSON data.
- * 
- * @author matt
+ *
  * @version 1.0
  * @since 1.36
  */

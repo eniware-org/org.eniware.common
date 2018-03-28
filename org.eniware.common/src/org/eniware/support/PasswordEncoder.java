@@ -13,7 +13,6 @@ package org.eniware.support;
  * Modeled after the Spring Security <code>PasswordEncoder</code> API.
  * </p>
  * 
- * @author matt
  * @version 1.0
  * @since 1.36
  */

@@ -40,7 +40,6 @@ import org.springframework.beans.PropertyEditorRegistry;
  *   a RuntimeException will be thrown if this situation is encountered.</dd>
  * </dl>
  *
- * @author matt
  * @version $Revision$ $Date$
  */
 public class CloningPropertyEditorRegistrar implements PropertyEditorRegistrar {

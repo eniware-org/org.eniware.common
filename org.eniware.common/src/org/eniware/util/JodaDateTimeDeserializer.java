@@ -16,7 +16,6 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 /**
  * JsonDeserializer for {@link DateTime} objects from formatted strings.
  * 
- * @author matt
  * @version 1.0
  */
 public class JodaDateTimeDeserializer extends JodaBaseJsonDeserializer<DateTime> {

@@ -61,8 +61,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Bouncy Castle implementation of {@link CertificateService}.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class BCCertificateService implements CertificateService, CertificationAuthorityService {

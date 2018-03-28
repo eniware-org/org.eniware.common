@@ -11,8 +11,7 @@ import java.sql.SQLException;
 
 /**
  * A handler for SQL exceptions.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public interface SQLExceptionHandler {

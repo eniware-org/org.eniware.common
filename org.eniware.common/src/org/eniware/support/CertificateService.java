@@ -12,7 +12,6 @@ import java.security.cert.X509Certificate;
 /**
  * API for PKI support.
  * 
- * @author matt
  * @version 1.0
  */
 public interface CertificateService {

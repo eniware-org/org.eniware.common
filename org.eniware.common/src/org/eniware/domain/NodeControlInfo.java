@@ -10,7 +10,6 @@ package org.eniware.domain;
 /**
  * API for a user-manageable node component.
  * 
- * @author matt
  * @version $Revision$
  */
 public interface NodeControlInfo {

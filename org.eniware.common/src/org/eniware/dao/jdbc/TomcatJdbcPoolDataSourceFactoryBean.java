@@ -30,7 +30,6 @@ import org.springframework.beans.factory.ObjectFactory;
 /**
  * {@link javax.sql.DataSource} using a Tomcat Pool.
  * 
- * @author matt
  * @version 1.2
  */
 public class TomcatJdbcPoolDataSourceFactoryBean

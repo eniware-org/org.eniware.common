@@ -13,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 /**
  * Basic implementation of {@link Location}.
  * 
- * @author matt
  * @version 1.0
  */
 @JsonIgnoreProperties(ignoreUnknown = true)

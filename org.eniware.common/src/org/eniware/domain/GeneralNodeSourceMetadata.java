@@ -12,7 +12,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * Metadata about a source associated with a node.
  * 
- * @author matt
  * @version 1.0
  */
 @JsonPropertyOrder({ "created", "updated", "nodeId", "sourceId" })

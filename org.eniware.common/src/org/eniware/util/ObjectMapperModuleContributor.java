@@ -16,8 +16,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  * Class for adding a {@link Module} to an existing {@link ObjectMapper}.
  * 
  * This is useful for adding serializers/deserializers to a pre-existing mapper.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class ObjectMapperModuleContributor extends ObjectMapperModuleSupport {

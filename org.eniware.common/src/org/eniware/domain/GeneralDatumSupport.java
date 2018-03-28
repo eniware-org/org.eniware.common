@@ -18,8 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Supporting abstract class for general node datum related objects.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public abstract class GeneralDatumSupport implements Serializable {

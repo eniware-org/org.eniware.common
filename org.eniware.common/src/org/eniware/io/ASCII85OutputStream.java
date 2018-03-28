@@ -20,7 +20,6 @@ import java.io.OutputStream;
  * and {@code ~>}.
  * </p>
  * 
- * @author Mark Donszelmann
  * @version 1.4 2003/04/13 05:34:45
  */
 public class ASCII85OutputStream extends FilterOutputStream {

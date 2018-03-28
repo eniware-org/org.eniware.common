@@ -12,7 +12,6 @@ import org.osgi.framework.BundleContext;
 /**
  * {@link BundleActivator} to create a {@link PidFileCreator} instance.
  * 
- * @author matt
  * @version $Id$
  */
 public class Activator implements BundleActivator {

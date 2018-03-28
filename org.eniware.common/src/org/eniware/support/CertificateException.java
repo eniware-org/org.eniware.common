@@ -8,8 +8,7 @@ package org.eniware.support;
 
 /**
  * Runtime exception to support {@link CertificateService}.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class CertificateException extends RuntimeException {

@@ -19,7 +19,6 @@ import org.joda.time.format.DateTimeFormatter;
 /**
  * {@link PropertySerializer} for Joda date/time objects into Strings.
  *
- * @author matt
  * @version $Revision$ $Date$
  */
 public class JodaDatePropertySerializer implements PropertySerializer {

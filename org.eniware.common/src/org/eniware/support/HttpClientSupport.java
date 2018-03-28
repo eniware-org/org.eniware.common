@@ -32,7 +32,6 @@ import org.springframework.util.FileCopyUtils;
 /**
  * Basic support for HTTP client actions.
  * 
- * @author matt
  * @version 1.2
  * @since 1.35
  */

@@ -11,7 +11,6 @@ import java.util.Map;
 /**
  * Information that identifies the central SolarNet network.
  * 
- * @author matt
  * @version 1.1
  */
 public interface NetworkIdentity {

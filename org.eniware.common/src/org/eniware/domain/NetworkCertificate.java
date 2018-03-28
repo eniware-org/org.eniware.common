@@ -8,8 +8,7 @@ package org.eniware.domain;
 
 /**
  * API for a network certificate.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public interface NetworkCertificate {

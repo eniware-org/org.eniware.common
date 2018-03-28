@@ -13,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  * A collection of different types of sample data, grouped by logical sample
  * type.
  * 
- * @author matt
  * @version 1.2
  */
 @JsonPropertyOrder({ "i", "a", "s", "t" })

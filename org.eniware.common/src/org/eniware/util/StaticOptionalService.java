@@ -17,7 +17,6 @@ import java.util.Map;
  * service is known and available statically.
  * </p>
  * 
- * @author matt
  * @version 1.1
  */
 public class StaticOptionalService<T> implements OptionalService<T>, FilterableService {

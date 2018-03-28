@@ -19,7 +19,6 @@ import java.lang.annotation.Target;
  * example, where specific properties should not be rendered
  * into the view output format (e.g. JSON, XML, etc).
  * 
- * @author matt
  * @version $Revision$
  */
 @Target({ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD})

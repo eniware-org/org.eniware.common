@@ -9,7 +9,6 @@ package org.eniware.util;
 /**
  * API for items that can be cached.
  *
- * @author matt.magoffin
  * @version 1.0
  */
 public interface Cachable {

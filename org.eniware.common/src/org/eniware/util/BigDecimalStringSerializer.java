@@ -21,7 +21,6 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 /**
  * Specialized serializer of {@link BigDecimal} to string values.
  * 
- * @author matt
  * @version 1.0
  * @since 1.37
  */

@@ -12,8 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Serialize objects to a JSON string value.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class JSONStringPropertySerializer implements PropertySerializer {

@@ -16,8 +16,7 @@ import com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer;
 /**
  * Abstract {@link JsonDeserializer} class for converting strings into Joda
  * objects.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public abstract class JodaBaseJsonDeserializer<T> extends StdScalarDeserializer<T> {

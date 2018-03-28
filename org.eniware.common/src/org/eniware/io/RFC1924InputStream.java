@@ -13,7 +13,6 @@ import java.io.InputStream;
 /**
  * Decode RFC 1924 encoded stream back to its original form.
  * 
- * @author matt
  * @version 1.0
  */
 public class RFC1924InputStream extends FilterInputStream {

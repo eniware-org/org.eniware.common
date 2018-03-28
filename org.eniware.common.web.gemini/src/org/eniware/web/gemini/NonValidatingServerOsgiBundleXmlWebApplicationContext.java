@@ -18,8 +18,7 @@ import org.springframework.context.ApplicationContext;
  * This can greatly increase application startup time on low-powered devices, as
  * well as reduce network access.
  * </p>
- * 
- * @author matt
+ *
  * @version 1.1
  */
 public class NonValidatingServerOsgiBundleXmlWebApplicationContext

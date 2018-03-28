@@ -19,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonUnwrapped;
 /**
  * Metadata about a source.
  * 
- * @author matt
  * @version 1.0
  */
 @JsonPropertyOrder({ "created", "updated", "sourceId" })

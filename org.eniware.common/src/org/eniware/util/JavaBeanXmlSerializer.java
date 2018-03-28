@@ -48,8 +48,7 @@ import org.slf4j.LoggerFactory;
  * serialize specific objects into String values. This can be useful for
  * formatting Date objects into strings, for example.</dd>
  * </dl>
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public class JavaBeanXmlSerializer implements PropertySerializer {

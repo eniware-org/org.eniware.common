@@ -66,8 +66,7 @@ import org.w3c.dom.Node;
  * <dd>An optional {@link NamespaceContext} to use for proper XML namespace
  * handling in some contexts, such as XPath.</dd>
  * </dl>
- * 
- * @author matt
+ *
  * @version 1.2
  */
 public class XmlSupport {

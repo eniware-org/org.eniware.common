@@ -16,7 +16,6 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 /**
  * JsonSerializer for {@link LocalDate} into simple strings.
  * 
- * @author matt
  * @version 1.1
  */
 public class JodaLocalDateSerializer extends JodaBaseJsonSerializer<LocalDate> {

@@ -41,8 +41,7 @@ import org.osgi.framework.ServiceReference;
  * <dt>service</dt>
  * <dd>The managed service to track.</dd>
  * </dl>
- * 
- * @author matt
+ *
  * @version 1.1
  */
 public class OptionalServiceTracker<T> implements OptionalService<T> {

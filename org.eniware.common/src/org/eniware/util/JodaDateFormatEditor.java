@@ -43,7 +43,6 @@ import org.joda.time.format.DateTimeFormatter;
  *   
  * </dl>
  *
- * @author matt
  * @version $Revision$ $Date$
  */
 public class JodaDateFormatEditor extends PropertyEditorSupport

@@ -10,8 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * API for exposing {@link ObjectMapper} as a service.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public interface ObjectMapperService {

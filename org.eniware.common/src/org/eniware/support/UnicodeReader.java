@@ -16,8 +16,7 @@ import java.io.Reader;
  * Reader that can detect a Unicode BOM.
  * 
  * Adapted from Google Data API.
- * 
- * @author matt
+ *
  * @version 1.0
  * @since 1.35
  */

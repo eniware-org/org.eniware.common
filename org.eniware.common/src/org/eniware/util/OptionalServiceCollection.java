@@ -14,8 +14,7 @@ package org.eniware.util;
  * 
  * @param <T>
  *        the tracked service type
- * 
- * @author matt
+ *
  * @version 1.0
  * @see OptionalService
  */

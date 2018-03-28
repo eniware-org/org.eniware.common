@@ -18,7 +18,6 @@ import org.joda.time.ReadableDuration;
  * in mind, so that one instance of a {@link JodaDurationEditor} can be shared
  * between multiple threads to parse or format Joda date objects.</p>
  * 
- * @author matt
  * @version $Revision$
  */
 public class JodaDurationEditor extends PropertyEditorSupport

@@ -15,8 +15,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 
 /**
  * JsonSerializer for {@link DateTime} into simple strings.
- * 
- * @author matt
+ *
  * @version 1.1
  */
 public class JodaDateTimeSerializer extends JodaBaseJsonSerializer<DateTime> {

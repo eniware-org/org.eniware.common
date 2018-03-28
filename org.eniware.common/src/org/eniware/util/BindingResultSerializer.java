@@ -14,7 +14,6 @@ import org.springframework.validation.BindingResult;
 /**
  * Serialize a {@link BindingResult} into a simple Map, to eliminate circular references.
  * 
- * @author matt
  * @version $Revision$
  */
 public class BindingResultSerializer implements PropertySerializer {

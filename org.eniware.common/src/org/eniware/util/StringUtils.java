@@ -18,8 +18,7 @@ import java.util.regex.PatternSyntaxException;
 
 /**
  * Common string helper utilities.
- * 
- * @author matt
+ *
  * @version 1.5
  */
 public final class StringUtils {

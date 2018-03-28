@@ -13,8 +13,7 @@ import java.util.Iterator;
  * Joins multiple Iterator instances into a single Iterator.
  * 
  * @param <E>
- *        the element type
- * @author matt
+ *
  * @version 1.0
  */
 public class UnionIterator<E> implements Iterator<E> {

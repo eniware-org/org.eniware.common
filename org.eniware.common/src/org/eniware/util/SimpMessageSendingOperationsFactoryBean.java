@@ -18,7 +18,6 @@ import org.springframework.messaging.simp.SimpMessageSendingOperations;
  * the object as a property, then exporting the bean with a known ID (or simply
  * as an OSGi service).
  * 
- * @author matt
  * @version 1.0
  */
 public class SimpMessageSendingOperationsFactoryBean

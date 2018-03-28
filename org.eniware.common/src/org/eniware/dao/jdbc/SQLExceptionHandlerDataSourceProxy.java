@@ -32,7 +32,6 @@ import org.slf4j.LoggerFactory;
  * A {@link DataSource} proxy that catches connection errors in order to handle
  * the exceptions from {@link SQLExceptionHandlers} registered with the system.
  * 
- * @author matt
  * @version 1.0
  */
 public class SQLExceptionHandlerDataSourceProxy implements DataSource, ConnectionEventListener {

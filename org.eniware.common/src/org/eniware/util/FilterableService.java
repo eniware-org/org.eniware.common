@@ -12,8 +12,7 @@ import java.util.Map;
  * API for a service that supports filtering properties, to support narrowing
  * down a possible collection of services to one or more specific services
  * matching the filter.
- * 
- * @author matt
+ *
  * @version 1.0
  */
 public interface FilterableService {

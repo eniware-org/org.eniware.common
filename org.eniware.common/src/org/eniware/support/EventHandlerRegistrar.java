@@ -11,7 +11,6 @@ import org.osgi.service.event.EventHandler;
 /**
  * API for registering OSGi {@link EventHandler} instances with topics.
  * 
- * @author matt
  * @version 1.0
  * @since 1.36
  */

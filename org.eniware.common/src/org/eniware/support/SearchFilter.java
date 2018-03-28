@@ -18,7 +18,6 @@ import java.util.Map;
  * operator. The key-value pairs are provided by a {@code Map}.
  * </p>
  * 
- * @author matt
  * @version 1.0
  */
 public class SearchFilter {

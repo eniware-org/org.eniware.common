@@ -11,7 +11,6 @@ import java.net.URLEncoder;
 /**
  * Basic implementation of {@link RegistrationReceipt}.
  * 
- * @author matt
  * @version 1.1
  */
 public class BasicRegistrationReceipt implements RegistrationReceipt, Cloneable {

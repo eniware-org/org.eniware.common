@@ -16,23 +16,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 /**
  * EventAdmin implementation that can synchronize the posting of events to the
  * current thread's active transaction.
- * 
- * <p>
- * This can be useful for event handlers that need to access data related to the
- * active transaction, for example by querying the data after the transaction
- * completes. If no transaction is available when {@link #postEvent(Event)} is
- * called, it will be immediately passed to the configured delegate
- * {@link EventAdmin}. Otherwise the event will be registered to post when the
- * configured transaction phase occurs.
- * </p>
- * 
- * <p>
- * The {@link #sendEvent(Event)} does not synchronize with any transactions.
- * Instead it immediately calls {@link EventAdmin#sendEvent(Event)} on the
- * configured delegate.
- * </p>
- * 
- * @author matt
+ *
  * @version 1.0
  * @since 1.36
  */

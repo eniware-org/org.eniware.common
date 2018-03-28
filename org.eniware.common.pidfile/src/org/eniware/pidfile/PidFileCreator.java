@@ -25,7 +25,6 @@ import java.io.PrintWriter;
  * bundle can be deployed early to create the PID file as soon as 
  * possible after being activated.</p>
  * 
- * @author matt
  * @version $Id$
  */
 public class PidFileCreator {
