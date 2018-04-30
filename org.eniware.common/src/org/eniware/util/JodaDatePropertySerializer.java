@@ -48,7 +48,7 @@ public class JodaDatePropertySerializer implements PropertySerializer {
 	}
 	
 	/* (non-Javadoc)
-	 * @see net.sf.solarnetwork.util.PropertySerializer#serialize(java.lang.Object, java.lang.String, java.lang.Object)
+	 * @see net.sf.eniwarenetwork.util.PropertySerializer#serialize(java.lang.Object, java.lang.String, java.lang.Object)
 	 */
 	public Object serialize(Object data, String propertyName, Object propertyValue) {
 		if ( propertyValue == null ) {

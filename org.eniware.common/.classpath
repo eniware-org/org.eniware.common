@@ -3,7 +3,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/home/eniware/git/solarnetwork-build original/solarnetwork-osgi-target/spring/org.apache.servicemix.bundles.spring-messaging-4.2.9.RELEASE_1.jar"/>
+	<classpathentry kind="lib" path="/home/eniware/git/eniwarenetwork-build original/eniwarenetwork-osgi-target/spring/org.apache.servicemix.bundles.spring-messaging-4.2.9.RELEASE_1.jar"/>
 	<classpathentry kind="lib" path="/eniware-osgi-target/platform/joda-time-2.9.7.jar"/>
 	<classpathentry kind="lib" path="/eniware-osgi-target/platform/com.springsource.org.apache.commons.beanutils-1.8.0.jar"/>
 	<classpathentry kind="lib" path="/eniware-osgi-target/platform/tomcat-jdbc-8.5.11.jar"/>

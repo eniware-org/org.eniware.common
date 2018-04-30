@@ -43,7 +43,7 @@ public interface NetworkCertificate {
 	 * <p>
 	 * The node must generate a certificate signing request (CSR) using this
 	 * subject name and then install the signed certificate when granted by the
-	 * SolarNet certification authority (CA).
+	 * EniwareNet certification authority (CA).
 	 * </p>
 	 * 
 	 * @return the node's subject DN

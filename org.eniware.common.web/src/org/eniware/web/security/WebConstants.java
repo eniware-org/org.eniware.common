@@ -7,7 +7,7 @@
 package org.eniware.web.security;
 
 /**
- * Global web constants for the central SolarNetwork applications.
+ * Global web constants for the central EniwareNetwork applications.
  * 
  * @version 1.0
  * @since 1.11

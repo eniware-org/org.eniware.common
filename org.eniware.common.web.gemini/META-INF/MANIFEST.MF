@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse Gemini Web Support
 Bundle-SymbolicName: org.eniware.common.web.gemini
 Bundle-Version: 2.1.0
-Bundle-Vendor: SolarNetwork
+Bundle-Vendor: EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: 
  org.eniware.web.gemini;version="2.0.0"

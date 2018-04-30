@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Command object for initial SolarNode and SolarNet association data.
+ * Command object for initial EniwareEdge and EniwareNet association data.
  * 
  * @version 1.1
  */

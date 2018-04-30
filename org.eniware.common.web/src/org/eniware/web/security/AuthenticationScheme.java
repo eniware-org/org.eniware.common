@@ -15,7 +15,7 @@ package org.eniware.web.security;
 public enum AuthenticationScheme {
 
 	/** The original scheme. */
-	V1("SolarNetworkWS"),
+	V1("EniwareNetworkWS"),
 
 	/** The version 2 scheme. */
 	V2("SNWS2");

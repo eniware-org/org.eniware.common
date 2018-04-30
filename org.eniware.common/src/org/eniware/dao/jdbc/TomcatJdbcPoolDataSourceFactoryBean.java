@@ -41,7 +41,7 @@ public class TomcatJdbcPoolDataSourceFactoryBean
 	private BundleContext bundleContext;
 	private boolean sqlExceptionHandlerSupport = false;
 	private boolean registerJmx = false;
-	private String jmxName = "SolarNetwork";
+	private String jmxName = "EniwareNetwork";
 
 	private final Logger log = LoggerFactory.getLogger(getClass());
 
@@ -64,7 +64,7 @@ public class TomcatJdbcPoolDataSourceFactoryBean
 			props.put("type", "DataSource");
 			props.put("name", jmxName);
 			try {
-				ObjectName name = ObjectName.getInstance("net.solarnetwork.dao.jdbc", props);
+				ObjectName name = ObjectName.getInstance("org.eniware.dao.jdbc", props);
 				server.registerMBean(ds.getPool().getJmxPool(), name);
 			} catch ( MalformedObjectNameException e ) {
 				log.error("Error registering JDBC connection pool with JMX: {}", e.getMessage());

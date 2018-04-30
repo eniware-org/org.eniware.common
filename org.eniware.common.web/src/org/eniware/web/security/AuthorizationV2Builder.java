@@ -30,7 +30,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 
 /**
- * Builder for HTTP {@code Authorization} header values using the SolarNetwork
+ * Builder for HTTP {@code Authorization} header values using the EniwareNetwork
  * authentication scheme V2.
  * 
  * This builder can be used to calculate a one-off header value, for example:
@@ -38,7 +38,7 @@ import org.springframework.util.StringUtils;
  * <pre>
  * <code>
  * String authHeader = new AuthorizationV2Builder("my-token")
- *     .path("/solarquery/api/v1/pub/...")
+ *     .path("/eniwarequery/api/v1/pub/...")
  *     .build("my-token-secret");
  * </code>
  * </pre>
@@ -52,7 +52,7 @@ import org.springframework.util.StringUtils;
  * 
  * // elsewhere, re-use the builder for repeated requests
  * builder.reset()
- *     .path("/solarquery/api/v1/pub/...")
+ *     .path("/eniwarequery/api/v1/pub/...")
  *     .build("my-token-secret");
  * </code>
  * </pre>
@@ -67,7 +67,7 @@ import org.springframework.util.StringUtils;
  * 
  * // elsewhere, re-use the builder for repeated requests
  * builder.reset()
- *     .path("/solarquery/api/v1/pub/...")
+ *     .path("/eniwarequery/api/v1/pub/...")
  *     .build(); // note no argument call here, so previously generated key used
  * </code>
  * </pre>
@@ -332,7 +332,7 @@ public final class AuthorizationV2Builder {
 		httpHeaders = new HttpHeaders();
 		parameters = null;
 		signedHeaderNames = null;
-		return method(HttpMethod.GET).host("data.solarnetwork.net:443").path("/").date(new Date());
+		return method(HttpMethod.GET).host("data.network.eniware.org:443").path("/").date(new Date());
 	}
 
 	/**

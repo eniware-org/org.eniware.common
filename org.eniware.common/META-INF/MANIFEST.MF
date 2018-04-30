@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Core SolarNetwork Support
+Bundle-Name: Core EniwareNetwork Support
 Bundle-SymbolicName: org.eniware.common
-Bundle-Description: Common supporting infrastructure for SolarNode and SolarNet applications.
+Bundle-Description: Common supporting infrastructure for EniwareEdge and EniwareNet applications.
 Bundle-Version: 1.41.0
-Bundle-Vendor: SolarNetwork
+Bundle-Vendor: EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: 
  org.eniware.dao.jdbc;version="1.2.0",

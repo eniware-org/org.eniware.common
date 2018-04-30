@@ -35,16 +35,16 @@ import org.springframework.util.FileCopyUtils;
  * 
  * <p>
  * Request messages are logged at {@literal TRACE} level under the
- * {@literal net.solarnetwork.http.REQ} logger; responses under
- * {@literal net.solarnetwork.http.RES}.
+ * {@literal org.eniware.http.REQ} logger; responses under
+ * {@literal org.eniware.http.RES}.
  * </p>
  * 
  * @version 1.0
  */
 public class LoggingHttpRequestInterceptor implements ClientHttpRequestInterceptor {
 
-	private static final Logger REQ_LOG = LoggerFactory.getLogger("net.solarnetwork.http.REQ");
-	private static final Logger RES_LOG = LoggerFactory.getLogger("net.solarnetwork.http.RES");
+	private static final Logger REQ_LOG = LoggerFactory.getLogger("org.eniware.http.REQ");
+	private static final Logger RES_LOG = LoggerFactory.getLogger("org.eniware.http.RES");
 
 	/**
 	 * Get a client request factory with logging support if either request or

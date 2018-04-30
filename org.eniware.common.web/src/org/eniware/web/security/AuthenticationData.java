@@ -26,7 +26,7 @@ import org.springframework.security.authentication.BadCredentialsException;
  */
 public abstract class AuthenticationData {
 
-	/** The fixed length of a SolarNetwork authentication token ID. */
+	/** The fixed length of a EniwareNetwork authentication token ID. */
 	public static final int AUTH_TOKEN_ID_LENGTH = 20;
 
 	private final Date date;

@@ -1,6 +1,6 @@
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-    <info organisation="net.solarnetwork.common.test" module="${bundle.name}">
-    	<extends organisation="net.solarnetwork.common" 
+    <info organisation="org.eniware.common.test" module="${bundle.name}">
+    	<extends organisation="org.eniware.common" 
     		module="${bundle.name}" revision="[1.34.1,2)"
     		location="../${test.bundle.name}/ivy.xml"/>
     </info>
@@ -22,8 +22,8 @@
 		<dependency org="commons-codec" name="commons-codec" rev="1.7"/>
  		
 		<!-- SolarNetwork -->
-		<dependency org="net.solarnetwork.common" name="net.solarnetwork.common.pki.bc" rev="latest.release"/>
+		<dependency org="org.eniware.common" name="org.eniware.common.pki.bc" rev="latest.release"/>
 		
-		<exclude org="net.solarnetwork.common" module="net.solarnetwork.common"/>
+		<exclude org="org.eniware.common" module="org.eniware.common"/>
 	</dependencies>
 </ivy-module>

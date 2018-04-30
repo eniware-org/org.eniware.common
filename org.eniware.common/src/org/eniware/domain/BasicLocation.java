@@ -107,7 +107,7 @@ public class BasicLocation implements Location {
 	}
 
 	/**
-	 * Return a new SolarLocation with normalized values from another Location.
+	 * Return a new EniwareLocation with normalized values from another Location.
 	 * 
 	 * @param loc
 	 *        the location to normalize

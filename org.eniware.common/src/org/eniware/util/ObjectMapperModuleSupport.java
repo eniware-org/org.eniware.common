@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  */
 public class ObjectMapperModuleSupport extends SimpleObjectMapperService {
 
-	private String moduleName = "SolarNetworkModule";
+	private String moduleName = "EniwareNetworkModule";
 	private Version moduleVersion = new Version(1, 0, 0, null, null, null);
 	private List<JsonSerializer<?>> serializers;
 	private List<JsonDeserializer<?>> deserializers;

@@ -18,9 +18,9 @@ import org.slf4j.LoggerFactory;
  * </p>
  * 
  * <pre>
- * &lt;reference-list interface="net.solarnetwork.util.CloseableService" availability="optional">
+ * &lt;reference-list interface="org.eniware.util.CloseableService" availability="optional">
  * 		&lt;reference-listener unbind-method="onReleased">
- * 			&lt;bean class="net.solarnetwork.util.CloseableServiceTracker"/>
+ * 			&lt;bean class="org.eniware.util.CloseableServiceTracker"/>
  * 		&lt;/reference-listener>
  * &lt;/reference-list>
  * </pre>

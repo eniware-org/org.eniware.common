@@ -132,40 +132,40 @@ public class BasicNetworkIdentity implements NetworkIdentity, Serializable {
 
 	/**
 	 * Put a {@code networkServiceURLs} value for the
-	 * {@link NetworkIdentity#SOLARUSER_NETWORK_SERVICE_KEY} key.
+	 * {@link NetworkIdentity#ENIWAREUSER_NETWORK_SERVICE_KEY} key.
 	 * 
 	 * @param url
 	 *        The URL to set, or <em>null</em> to remove.
 	 */
-	public void setSolarUserServiceURL(String url) {
-		putServiceURL(SOLARUSER_NETWORK_SERVICE_KEY, url);
+	public void setEniwareUserServiceURL(String url) {
+		putServiceURL(ENIWAREUSER_NETWORK_SERVICE_KEY, url);
 	}
 
 	/**
-	 * Get the {@link NetworkIdentity#SOLARUSER_NETWORK_SERVICE_KEY}
+	 * Get the {@link NetworkIdentity#ENIWAREUSER_NETWORK_SERVICE_KEY}
 	 * {@code networkServiceURLs} value.
 	 */
-	public String getSolarUserServiceURL() {
-		return getServiceURL(SOLARUSER_NETWORK_SERVICE_KEY);
+	public String getEniwareUserServiceURL() {
+		return getServiceURL(ENIWAREUSER_NETWORK_SERVICE_KEY);
 	}
 
 	/**
 	 * Put a {@code networkServiceURLs} value for the
-	 * {@link NetworkIdentity#SOLARQUERY_NETWORK_SERVICE_KEY} key.
+	 * {@link NetworkIdentity#ENIWAREQUERY_NETWORK_SERVICE_KEY} key.
 	 * 
 	 * @param url
 	 *        The URL to set, or <em>null</em> to remove.
 	 */
-	public void setSolarQueryServiceURL(String url) {
-		putServiceURL(SOLARQUERY_NETWORK_SERVICE_KEY, url);
+	public void setEniwareQueryServiceURL(String url) {
+		putServiceURL(ENIWAREQUERY_NETWORK_SERVICE_KEY, url);
 	}
 
 	/**
-	 * Get the {@link NetworkIdentity#SOLARQUERY_NETWORK_SERVICE_KEY}
+	 * Get the {@link NetworkIdentity#ENIWAREQUERY_NETWORK_SERVICE_KEY}
 	 * {@code networkServiceURLs} value.
 	 */
-	public String getSolarQueryServiceURL() {
-		return getServiceURL(SOLARQUERY_NETWORK_SERVICE_KEY);
+	public String getEniwareQueryServiceURL() {
+		return getServiceURL(ENIWAREQUERY_NETWORK_SERVICE_KEY);
 	}
 
 }

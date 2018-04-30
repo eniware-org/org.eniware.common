@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: SolarNetwork Common Web
+Bundle-Name: EniwareNetwork Common Web
 Bundle-SymbolicName: org.eniware.common.web
-Bundle-Description: Common supporting infrastructure for SolarNode and SolarNet web applications.
+Bundle-Description: Common supporting infrastructure for EniwareEdge and EniwareNet web applications.
 Bundle-Version: 1.14.0
-Bundle-Vendor: SolarNetwork
+Bundle-Vendor: EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: 
  org.eniware.web.domain;version="1.1.0",

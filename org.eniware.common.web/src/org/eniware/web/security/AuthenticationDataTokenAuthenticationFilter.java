@@ -36,7 +36,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
  * Authentication filter for {@link AuthenticationData} style token
  * authentication.
  * 
- * This filter supports the {@literal SolarNetworkWS} and {@literal SNWS2} HTTP
+ * This filter supports the {@literal EniwareNetworkWS} and {@literal SNWS2} HTTP
  * authorization schemes. In addition, a JWT encoded cookie named
  * {@literal sntoken} can be generated if a request parameter
  * {@literal sntoken-cookie=true} is passed with the request. That cookie can

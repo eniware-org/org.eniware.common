@@ -30,7 +30,7 @@ import java.io.PrintWriter;
 public class PidFileCreator {
 
 	/** The system property for the PID file location. */
-	public static final String SETTING_PID_FILE = "solarnetwork.pidfile";
+	public static final String SETTING_PID_FILE = "eniwarenetwork.pidfile";
 
 	public void createPidFile() {
 		String pidFilePath = System.getProperty(SETTING_PID_FILE);

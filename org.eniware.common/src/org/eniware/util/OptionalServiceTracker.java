@@ -18,17 +18,17 @@ import org.osgi.framework.ServiceReference;
  * 
  * <pre>
  * &lt;osgi:reference id="fooService"
- * 		interface="net.solarnetwork.node.FooService" cardinality="0..1">
+ * 		interface="org.eniware.edge.FooService" cardinality="0..1">
  * 		&lt;osgi:listener bind-method="onBind" unbind-method="onUnbind" ref="optionalFooService">
  * &lt;/osgi:list>
  * 
  * &lt;bean id="optionalFooService" 
- * 		class="net.solarnetwork.node.util.OptionalServiceTracker">
+ * 		class="org.eniware.edge.util.OptionalServiceTracker">
  * 		&lt;property name="service" ref="fooService"/>
  * &lt;/bean>
  * 
  * &lt;bean id="fooServiceConsumer" 
- * 		class="net.solarnetwork.node.FooServiceConsumer">
+ * 		class="org.eniware.edge.FooServiceConsumer">
  * 		&lt;property name="service" ref="optionalFooService"/>
  * &lt;/bean>
  * </pre>

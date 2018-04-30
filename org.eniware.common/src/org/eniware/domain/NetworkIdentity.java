@@ -9,25 +9,25 @@ package org.eniware.domain;
 import java.util.Map;
 
 /**
- * Information that identifies the central SolarNet network.
+ * Information that identifies the central EniwareNet network.
  * 
  * @version 1.1
  */
 public interface NetworkIdentity {
 
 	/**
-	 * The {@link #getNetworkServiceURLs()} key for the SolarUser service.
+	 * The {@link #getNetworkServiceURLs()} key for the EniwareUser service.
 	 * 
 	 * @since 1.1
 	 */
-	final String SOLARUSER_NETWORK_SERVICE_KEY = "solaruser";
+	final String ENIWAREUSER_NETWORK_SERVICE_KEY = "eniwareuser";
 
 	/**
-	 * The {@link #getNetworkServiceURLs()} key for the SolarQuery service.
+	 * The {@link #getNetworkServiceURLs()} key for the EniwareQuery service.
 	 * 
 	 * @since 1.1
 	 */
-	final String SOLARQUERY_NETWORK_SERVICE_KEY = "solarquery";
+	final String ENIWAREQUERY_NETWORK_SERVICE_KEY = "eniwarequery";
 
 	/**
 	 * Get the service host name.
@@ -66,7 +66,7 @@ public interface NetworkIdentity {
 
 	/**
 	 * Get a mapping of pre-defined network service URLs, to be used by clients
-	 * to provide links to the SolarNetwork they are associated with.
+	 * to provide links to the EniwareNetwork they are associated with.
 	 * 
 	 * @return a mapping of keys to string URLs
 	 * @since 1.1

@@ -18,20 +18,20 @@
 	
 	<ctx:property-placeholder properties-ref="settings.ca.cfg"/>
 
-	<osgix:cm-properties id="settings.ca.cfg" persistent-id="net.solarnetwork.pki.bc">
+	<osgix:cm-properties id="settings.ca.cfg" persistent-id="org.eniware.pki.bc">
 		<beans:prop key="CertificateService.certificateExpireDays">730</beans:prop>
 		<beans:prop key="CertificateService.signatureAlgorithm">SHA256WithRSA</beans:prop>
 	</osgix:cm-properties>
 	
-	<bean id="certificateService" class="net.solarnetwork.pki.bc.BCCertificateService">
+	<bean id="certificateService" class="org.eniware.pki.bc.BCCertificateService">
 		<property name="certificateExpireDays" value="${CertificateService.certificateExpireDays}"/>
 		<property name="signatureAlgorithm" value="${CertificateService.signatureAlgorithm}"/>
 	</bean>
 	
 	<service ref="certificateService">
 		<interfaces>
-			<value>net.solarnetwork.support.CertificateService</value>
-			<value>net.solarnetwork.support.CertificationAuthorityService</value>
+			<value>org.eniware.support.CertificateService</value>
+			<value>org.eniware.support.CertificationAuthorityService</value>
 		</interfaces>
 	</service>
 	
