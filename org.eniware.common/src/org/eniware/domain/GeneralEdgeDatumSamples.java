@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  * @version 1.2
  */
 @JsonPropertyOrder({ "i", "a", "s", "t" })
-public class GeneralNodeDatumSamples extends GeneralDatumSamples implements Serializable {
+public class GeneralEdgeDatumSamples extends GeneralDatumSamples implements Serializable {
 
 	private static final long serialVersionUID = 1412166842747615064L;
 

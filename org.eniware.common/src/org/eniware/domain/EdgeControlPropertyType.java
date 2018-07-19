@@ -11,7 +11,7 @@ package org.eniware.domain;
  * 
  * @version $Revision$
  */
-public enum NodeControlPropertyType {
+public enum EdgeControlPropertyType {
 
 	Boolean,
 	

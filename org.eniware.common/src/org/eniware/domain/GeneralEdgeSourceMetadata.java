@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  */
 @JsonPropertyOrder({ "created", "updated", "nodeId", "sourceId" })
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class GeneralNodeSourceMetadata extends GeneralSourceMetadata {
+public class GeneralEdgeSourceMetadata extends GeneralSourceMetadata {
 
 	private Long nodeId;
 

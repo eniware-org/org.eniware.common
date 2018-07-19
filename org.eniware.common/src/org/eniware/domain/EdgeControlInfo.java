@@ -12,13 +12,13 @@ package org.eniware.domain;
  * 
  * @version $Revision$
  */
-public interface NodeControlInfo {
+public interface EdgeControlInfo {
 
 	String getControlId();
 	
 	String getPropertyName();
 	
-	NodeControlPropertyType getType();
+	EdgeControlPropertyType getType();
 	
 	String getValue();
 	

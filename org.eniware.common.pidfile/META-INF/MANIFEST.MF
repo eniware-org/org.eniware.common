@@ -9,3 +9,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: 
  org.osgi.framework;version="1.3.0"
 Bundle-Activator: org.eniware.pidfile.Activator
+Automatic-Module-Name: org.eniware.common.pidfile

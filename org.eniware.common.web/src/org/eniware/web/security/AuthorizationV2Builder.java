@@ -332,7 +332,7 @@ public final class AuthorizationV2Builder {
 		httpHeaders = new HttpHeaders();
 		parameters = null;
 		signedHeaderNames = null;
-		return method(HttpMethod.GET).host("data.network.eniware.org:443").path("/").date(new Date());
+		return method(HttpMethod.GET).host("data.network.eniware.org/:443").path("/").date(new Date());
 	}
 
 	/**

@@ -66,3 +66,4 @@ Import-Package:
  org.supercsv.io;version="[2.0,3.0)";resolution:=optional,
  org.supercsv.prefs;version="[2.0,3.0)";resolution:=optional,
  org.supercsv.util;version="[2.0,3.0)";resolution:=optional
+Automatic-Module-Name: org.eniware.common.web

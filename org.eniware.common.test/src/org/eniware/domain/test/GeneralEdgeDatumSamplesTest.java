@@ -26,7 +26,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eniware.domain.GeneralNodeDatumSamples;
+import org.eniware.domain.GeneralEdgeDatumSamples;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,12 +35,12 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * Test cases for {@link GeneralNodeDatumSamples}.
+ * Test cases for {@link GeneralEdgeDatumSamples}.
  * 
  * @author matt
  * @version 1.1
  */
-public class GeneralNodeDatumSamplesTest {
+public class GeneralEdgeDatumSamplesTest {
 
 	private ObjectMapper objectMapper;
 
@@ -51,8 +51,8 @@ public class GeneralNodeDatumSamplesTest {
 		objectMapper.configure(DeserializationFeature.USE_BIG_DECIMAL_FOR_FLOATS, true);
 	}
 
-	private GeneralNodeDatumSamples getTestInstance() {
-		GeneralNodeDatumSamples samples = new GeneralNodeDatumSamples();
+	private GeneralEdgeDatumSamples getTestInstance() {
+		GeneralEdgeDatumSamples samples = new GeneralEdgeDatumSamples();
 
 		Map<String, Number> instants = new HashMap<String, Number>(2);
 		instants.put("watts", 231);
@@ -82,7 +82,7 @@ public class GeneralNodeDatumSamplesTest {
 	@Test
 	public void deserializeJson() throws Exception {
 		String json = "{\"i\":{\"watts\":89, \"temp\":21.2},\"s\":{\"ploc\":2502287},\"t\":[\"test\"]}";
-		GeneralNodeDatumSamples samples = objectMapper.readValue(json, GeneralNodeDatumSamples.class);
+		GeneralEdgeDatumSamples samples = objectMapper.readValue(json, GeneralEdgeDatumSamples.class);
 		Assert.assertNotNull(samples);
 		Assert.assertEquals(Integer.valueOf(89), samples.getInstantaneousSampleInteger("watts"));
 		Assert.assertEquals(Long.valueOf(2502287), samples.getStatusSampleLong("ploc"));
@@ -91,7 +91,7 @@ public class GeneralNodeDatumSamplesTest {
 
 	@Test
 	public void removeAccumulatingKey() {
-		GeneralNodeDatumSamples meta = getTestInstance();
+		GeneralEdgeDatumSamples meta = getTestInstance();
 		meta.putAccumulatingSampleValue("watt_hours", null);
 		meta.putStatusSampleValue("does.not.exist", null);
 		Assert.assertNull(meta.getAccumulatingSampleInteger("watt_hours"));
@@ -99,7 +99,7 @@ public class GeneralNodeDatumSamplesTest {
 
 	@Test
 	public void removeInstantaneousKey() {
-		GeneralNodeDatumSamples meta = getTestInstance();
+		GeneralEdgeDatumSamples meta = getTestInstance();
 		meta.putInstantaneousSampleValue("watts", null);
 		meta.putInstantaneousSampleValue("does.not.exist", null);
 		Assert.assertNull(meta.getInstantaneousSampleInteger("watts"));
@@ -107,7 +107,7 @@ public class GeneralNodeDatumSamplesTest {
 
 	@Test
 	public void removeStatusKey() {
-		GeneralNodeDatumSamples meta = getTestInstance();
+		GeneralEdgeDatumSamples meta = getTestInstance();
 		meta.putStatusSampleValue("msg", null);
 		meta.putStatusSampleValue("does.not.exist", null);
 		Assert.assertNull(meta.getStatusSampleString("msg"));
