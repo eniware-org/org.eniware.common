@@ -1,5 +1,5 @@
 /* ==================================================================
- * GeneralNodeDatumSamplesTest.java - Aug 29, 2014 1:09:38 PM
+ * GeneralEdgeDatumSamplesTest.java - Aug 29, 2014 1:09:38 PM
  * 
  * Copyright 2007-2014 SolarNetwork.net Dev Team
  * 

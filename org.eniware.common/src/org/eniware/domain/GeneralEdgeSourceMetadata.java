@@ -10,22 +10,22 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 /**
- * Metadata about a source associated with a node.
+ * Metadata about a source associated with a Edge.
  * 
  * @version 1.0
  */
-@JsonPropertyOrder({ "created", "updated", "nodeId", "sourceId" })
+@JsonPropertyOrder({ "created", "updated", "EdgeId", "sourceId" })
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GeneralEdgeSourceMetadata extends GeneralSourceMetadata {
 
-	private Long nodeId;
+	private Long EdgeId;
 
-	public Long getNodeId() {
-		return nodeId;
+	public Long getEdgeId() {
+		return EdgeId;
 	}
 
-	public void setNodeId(Long nodeId) {
-		this.nodeId = nodeId;
+	public void setEdgeId(Long EdgeId) {
+		this.EdgeId = EdgeId;
 	}
 
 }

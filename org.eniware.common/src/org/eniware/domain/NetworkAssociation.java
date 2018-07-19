@@ -7,7 +7,7 @@
 package org.eniware.domain;
 
 /**
- * API for node/network association details.
+ * API for Edge/network association details.
  * 
  * @version 1.1
  */

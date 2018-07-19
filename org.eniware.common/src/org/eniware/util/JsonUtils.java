@@ -145,19 +145,19 @@ public final class JsonUtils {
 	 * exceptions while deserializing the object are caught and ignored.
 	 * </p>
 	 * 
-	 * @param node
+	 * @param Edge
 	 *        the JSON object to convert
-	 * @return the map, or {@literal null} if {@code node} is not a JSON object,
+	 * @return the map, or {@literal null} if {@code Edge} is not a JSON object,
 	 *         is {@literal null}, or any exception occurs generating the JSON
 	 */
-	public static Map<String, Object> getStringMapFromTree(final JsonNode node) {
-		if ( node == null || !node.isObject() ) {
+	public static Map<String, Object> getStringMapFromTree(final JsonNode Edge) {
+		if ( Edge == null || !Edge.isObject() ) {
 			return null;
 		}
 		try {
-			return OBJECT_MAPPER.readValue(OBJECT_MAPPER.treeAsTokens(node), STRING_MAP_TYPE);
+			return OBJECT_MAPPER.readValue(OBJECT_MAPPER.treeAsTokens(Edge), STRING_MAP_TYPE);
 		} catch ( Exception e ) {
-			LOG.error("Exception deserialzing JSON node {} to Map<String, Object>", node, e);
+			LOG.error("Exception deserialzing JSON Edge {} to Map<String, Object>", Edge, e);
 		}
 		return null;
 	}
@@ -200,19 +200,19 @@ public final class JsonUtils {
 	/**
 	 * Parse a BigDecimal from a JSON object attribute value.
 	 * 
-	 * @param node
-	 *        the JSON node (e.g. object)
+	 * @param Edge
+	 *        the JSON Edge (e.g. object)
 	 * @param key
-	 *        the attribute key to obtain from {@code node}
+	 *        the attribute key to obtain from {@code Edge}
 	 * @return the parsed {@link BigDecimal}, or <em>null</em> if an error
 	 *         occurs or the specified attribute {@code key} is not available
 	 */
-	public static BigDecimal parseBigDecimalAttribute(JsonNode node, String key) {
+	public static BigDecimal parseBigDecimalAttribute(JsonNode Edge, String key) {
 		BigDecimal num = null;
-		if ( node != null ) {
-			JsonNode attrNode = node.get(key);
-			if ( attrNode != null && !attrNode.isNull() ) {
-				String txt = attrNode.asText();
+		if ( Edge != null ) {
+			JsonNode attrEdge = Edge.get(key);
+			if ( attrEdge != null && !attrEdge.isNull() ) {
+				String txt = attrEdge.asText();
 				if ( txt.indexOf('.') < 0 ) {
 					txt += ".0"; // force to decimal notation, so round-trip into samples doesn't result in int
 				}
@@ -220,7 +220,7 @@ public final class JsonUtils {
 					num = new BigDecimal(txt);
 				} catch ( NumberFormatException e ) {
 					LOG.debug("Error parsing decimal attribute [{}] value [{}]: {}",
-							new Object[] { key, attrNode, e.getMessage() });
+							new Object[] { key, attrEdge, e.getMessage() });
 				}
 			}
 		}
@@ -232,22 +232,22 @@ public final class JsonUtils {
 	 * 
 	 * If the date cannot be parsed, <em>null</em> will be returned.
 	 * 
-	 * @param node
-	 *        the JSON node (e.g. object)
+	 * @param Edge
+	 *        the JSON Edge (e.g. object)
 	 * @param key
-	 *        the attribute key to obtain from {@code node}
+	 *        the attribute key to obtain from {@code Edge}
 	 * @param dateFormat
 	 *        the date format to use to parse the date string
 	 * @return the parsed {@link Date} instance, or <em>null</em> if an error
 	 *         occurs or the specified attribute {@code key} is not available
 	 */
-	public static Date parseDateAttribute(JsonNode node, String key, DateFormat dateFormat) {
+	public static Date parseDateAttribute(JsonNode Edge, String key, DateFormat dateFormat) {
 		Date result = null;
-		if ( node != null ) {
-			JsonNode attrNode = node.get(key);
-			if ( attrNode != null && !attrNode.isNull() ) {
+		if ( Edge != null ) {
+			JsonNode attrEdge = Edge.get(key);
+			if ( attrEdge != null && !attrEdge.isNull() ) {
 				try {
-					String dateString = attrNode.asText();
+					String dateString = attrEdge.asText();
 
 					// replace "midnight" with 12:00am
 					dateString = dateString.replaceAll("(?i)midnight", "12:00am");
@@ -258,7 +258,7 @@ public final class JsonUtils {
 					result = dateFormat.parse(dateString);
 				} catch ( ParseException e ) {
 					LOG.debug("Error parsing date attribute [{}] value [{}] using pattern {}: {}",
-							new Object[] { key, attrNode,
+							new Object[] { key, attrEdge,
 									(dateFormat instanceof SimpleDateFormat
 											? ((SimpleDateFormat) dateFormat).toPattern()
 											: dateFormat.toString()),
@@ -274,22 +274,22 @@ public final class JsonUtils {
 	 * 
 	 * If the Integer cannot be parsed, <em>null</em> will be returned.
 	 * 
-	 * @param node
-	 *        the JSON node (e.g. object)
+	 * @param Edge
+	 *        the JSON Edge (e.g. object)
 	 * @param key
-	 *        the attribute key to obtain from {@code node} node
+	 *        the attribute key to obtain from {@code Edge} Edge
 	 * @return the parsed {@link Integer}, or <em>null</em> if an error occurs
 	 *         or the specified attribute {@code key} is not available
 	 */
-	public static Integer parseIntegerAttribute(JsonNode node, String key) {
+	public static Integer parseIntegerAttribute(JsonNode Edge, String key) {
 		Integer num = null;
-		if ( node != null ) {
-			JsonNode attrNode = node.get(key);
-			if ( attrNode != null && !attrNode.isNull() ) {
-				if ( attrNode.isIntegralNumber() ) {
-					num = attrNode.asInt();
+		if ( Edge != null ) {
+			JsonNode attrEdge = Edge.get(key);
+			if ( attrEdge != null && !attrEdge.isNull() ) {
+				if ( attrEdge.isIntegralNumber() ) {
+					num = attrEdge.asInt();
 				} else {
-					String s = attrNode.asText();
+					String s = attrEdge.asText();
 					if ( s != null ) {
 						s = s.trim();
 					}
@@ -297,7 +297,7 @@ public final class JsonUtils {
 						num = Integer.valueOf(s);
 					} catch ( NumberFormatException e ) {
 						LOG.debug("Error parsing integer attribute [{}] value [{}]: {}",
-								new Object[] { key, attrNode, e.getMessage() });
+								new Object[] { key, attrEdge, e.getMessage() });
 					}
 				}
 			}
@@ -310,26 +310,26 @@ public final class JsonUtils {
 	 * 
 	 * If the Long cannot be parsed, <em>null</em> will be returned.
 	 * 
-	 * @param node
-	 *        the JSON node (e.g. object)
+	 * @param Edge
+	 *        the JSON Edge (e.g. object)
 	 * @param key
-	 *        the attribute key to obtain from {@code node} node
+	 *        the attribute key to obtain from {@code Edge} Edge
 	 * @return the parsed {@link Long}, or <em>null</em> if an error occurs or
 	 *         the specified attribute {@code key} is not available
 	 */
-	public static Long parseLongAttribute(JsonNode node, String key) {
+	public static Long parseLongAttribute(JsonNode Edge, String key) {
 		Long num = null;
-		if ( node != null ) {
-			JsonNode attrNode = node.get(key);
-			if ( attrNode != null && !attrNode.isNull() ) {
-				if ( attrNode.isIntegralNumber() ) {
-					num = attrNode.asLong();
+		if ( Edge != null ) {
+			JsonNode attrEdge = Edge.get(key);
+			if ( attrEdge != null && !attrEdge.isNull() ) {
+				if ( attrEdge.isIntegralNumber() ) {
+					num = attrEdge.asLong();
 				} else {
 					try {
-						num = Long.valueOf(attrNode.asText());
+						num = Long.valueOf(attrEdge.asText());
 					} catch ( NumberFormatException e ) {
 						LOG.debug("Error parsing long attribute [{}] value [{}]: {}",
-								new Object[] { key, attrNode, e.getMessage() });
+								new Object[] { key, attrEdge, e.getMessage() });
 					}
 				}
 			}
@@ -342,19 +342,19 @@ public final class JsonUtils {
 	 * 
 	 * If the String cannot be parsed, <em>null</em> will be returned.
 	 * 
-	 * @param node
-	 *        the JSON node (e.g. object)
+	 * @param Edge
+	 *        the JSON Edge (e.g. object)
 	 * @param key
-	 *        the attribute key to obtain from {@code node} node
+	 *        the attribute key to obtain from {@code Edge} Edge
 	 * @return the parsed {@link String}, or <em>null</em> if an error occurs or
 	 *         the specified attribute {@code key} is not available
 	 */
-	public static String parseStringAttribute(JsonNode node, String key) {
+	public static String parseStringAttribute(JsonNode Edge, String key) {
 		String s = null;
-		if ( node != null ) {
-			JsonNode attrNode = node.get(key);
-			if ( attrNode != null && !attrNode.isNull() ) {
-				s = attrNode.asText();
+		if ( Edge != null ) {
+			JsonNode attrEdge = Edge.get(key);
+			if ( attrEdge != null && !attrEdge.isNull() ) {
+				s = attrEdge.asText();
 			}
 		}
 		return s;

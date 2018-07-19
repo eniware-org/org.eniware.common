@@ -17,7 +17,7 @@ import org.eniware.util.SerializeIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
- * Supporting abstract class for general node datum related objects.
+ * Supporting abstract class for general Edge datum related objects.
  *
  * @version 1.0
  */

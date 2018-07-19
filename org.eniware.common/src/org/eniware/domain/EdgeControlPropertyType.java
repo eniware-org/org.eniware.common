@@ -7,7 +7,7 @@
 package org.eniware.domain;
 
 /**
- * Enumeration of supported node component property types.
+ * Enumeration of supported Edge component property types.
  * 
  * @version $Revision$
  */

@@ -16,7 +16,7 @@ public interface NetworkCertificate {
 	/**
 	 * Get an ID associated with this certificate.
 	 * 
-	 * @return a unique ID, e.g. node ID, never <em>null</em>
+	 * @return a unique ID, e.g. Edge ID, never <em>null</em>
 	 */
 	Long getNetworkId();
 
@@ -38,15 +38,15 @@ public interface NetworkCertificate {
 	String getNetworkCertificateStatus();
 
 	/**
-	 * Get the value of the node's expected public key certificate subject name.
+	 * Get the value of the Edge's expected public key certificate subject name.
 	 * 
 	 * <p>
-	 * The node must generate a certificate signing request (CSR) using this
+	 * The Edge must generate a certificate signing request (CSR) using this
 	 * subject name and then install the signed certificate when granted by the
 	 * EniwareNet certification authority (CA).
 	 * </p>
 	 * 
-	 * @return the node's subject DN
+	 * @return the Edge's subject DN
 	 */
 	String getNetworkCertificateSubjectDN();
 

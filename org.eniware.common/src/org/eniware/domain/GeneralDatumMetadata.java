@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 /**
- * Metadata about general node datum streams of data.
+ * Metadata about general Edge datum streams of data.
  * 
  * @version 1.1
  */

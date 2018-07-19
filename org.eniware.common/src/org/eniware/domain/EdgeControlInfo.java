@@ -8,7 +8,7 @@ package org.eniware.domain;
 
 
 /**
- * API for a user-manageable node component.
+ * API for a user-manageable Edge component.
  * 
  * @version $Revision$
  */
