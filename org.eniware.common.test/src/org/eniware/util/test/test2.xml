@@ -1,5 +1,0 @@
-<root>
-	<Foo bar="baz">
-		<Bar foo="baz"/>
-	</Foo>
-</root>

@@ -1,8 +1,0 @@
-<root>
-	<Foo bar="baz">
-		<Bar foo="baz"/>
-		<Bar foo="bam"/>
-		<Bar foo="wham"/>
-	</Foo>
-	<Foo bar="bam"/>
-</root>
